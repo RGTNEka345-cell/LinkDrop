@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: linkdrop-media-downloader
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit

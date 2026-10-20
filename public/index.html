@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Download media you own from supported social links in your preferred quality." />
+  <title>LinkDrop — Social Media Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav shell">
+    <a class="brand" href="#" aria-label="LinkDrop home"><span class="brand-mark">↓</span> LinkDrop</a>
+    <nav><a href="#how">How it works</a><a href="#supported">Supported sites</a></nav>
+    <a class="nav-cta" href="#download">Start downloading</a>
+  </header>
+
+  <main>
+    <section class="hero shell" id="download">
+      <div class="eyebrow"><span></span> Fast, free & simple</div>
+      <h1>Save videos.<br /><em>Keep the quality.</em></h1>
+      <p class="lead">Paste a link from your favorite social platform, choose the resolution you want, and download it in seconds.</p>
+
+      <form class="download-box" id="analyze-form">
+        <label class="url-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.1-1.1"/></svg>
+          <input id="url" type="url" placeholder="Paste your video link here..." required autocomplete="off" />
+        </label>
+        <button type="submit" id="analyze-btn">Get video <span>→</span></button>
+      </form>
+      <p class="status" id="status" role="status"></p>
+
+      <div class="platforms" id="supported">
+        <span>Works with</span>
+        <div><b class="youtube">▶</b> YouTube</div><div><b class="tiktok">♪</b> TikTok</div><div><b class="instagram">◎</b> Instagram</div><div><b class="facebook">f</b> Facebook</div><div><b class="x">𝕏</b> Twitter / X</div>
+      </div>
+    </section>
+
+    <section class="result shell hidden" id="result" aria-live="polite">
+      <img id="thumb" alt="Video thumbnail" />
+      <div class="result-info">
+        <span class="result-label">Ready to download</span>
+        <h2 id="title"></h2>
+        <p id="meta"></p>
+        <div class="choice-row">
+          <label>Video quality<select id="format"></select></label>
+          <button id="download-btn">Download <span>↓</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps shell" id="how">
+      <div class="section-copy"><span class="kicker">No learning curve</span><h2>Three clicks.<br />That’s it.</h2><p>No account, no confusing settings. LinkDrop keeps the process clear from paste to save.</p></div>
+      <div class="step-list">
+        <article><span>01</span><div><h3>Paste your link</h3><p>Copy a public video URL from a supported platform and drop it above.</p></div></article>
+        <article><span>02</span><div><h3>Pick your quality</h3><p>Choose the original quality or a smaller resolution that suits your device.</p></div></article>
+        <article><span>03</span><div><h3>Download & enjoy</h3><p>Save the file directly to your device—ready for offline viewing.</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell"><a class="brand" href="#"><span class="brand-mark">↓</span> LinkDrop</a><p>Download only content you own or have permission to use.</p><span>© 2026 LinkDrop</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
